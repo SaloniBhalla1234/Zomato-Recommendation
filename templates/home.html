@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato Dine-In Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #ff6347;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .intro {
+            text-align: center;
+            padding: 50px 20px;
+            background-image: url('images/food-bg.jpg');
+            background-size: cover;
+            color: white;
+        }
+
+        .intro h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .intro p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .recommend-btn {
+            background-color: #ff6347;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .recommend-btn:hover {
+            background-color: #e55337;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+
+        .feature {
+            text-align: center;
+            width: 30%;
+        }
+
+        .feature img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .feature h3 {
+            font-size: 1.5em;
+            margin: 15px 0;
+        }
+
+        .feature p {
+            font-size: 1em;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Food Animation */
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .feature img {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Zomato Dine-In Recommendations</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>Welcome to Zomato Dine-In Recommendations</h2>
+            <p>Discover the best restaurants around you with our personalized dine-in recommendations. Whether you're craving Italian, Chinese, Indian, or any other cuisine, we've got you covered!</p>
+            <a href="/recommendation" class="recommend-btn">Get Recommendation</a>
+        </section>
+        <section class="features">
+            <div class="feature">
+                <img src="images/food1.png" alt="Delicious Food">
+                <h3>Curated List</h3>
+                <p>We curate a list of the best restaurants based on your preferences.</p>
+            </div>
+            <div class="feature">
+                <img src="images/food2.png" alt="Cozy Ambiance">
+                <h3>Cozy Ambiance</h3>
+                <p>Find restaurants with the perfect ambiance to enjoy your meal.</p>
+            </div>
+            <div class="feature">
+                <img src="images/food3.png" alt="Top Chefs">
+                <h3>Top Chefs</h3>
+                <p>Enjoy dishes prepared by top chefs with a passion for food.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Zomato Dine-In Recommendations. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
